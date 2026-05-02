@@ -1,0 +1,511 @@
+body{
+    background-color: aliceblue;
+}
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1{
+    display: flex;
+    margin: 8px 10px 8px;
+    font-family: serif;
+    font-size: 44px;
+}
+h2{
+    display: flex;
+    font-family: serif;
+    font-size: 36px;
+}
+p{
+    display: flex;
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+}
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: white;
+    color: #333;
+}
+/* HEADER GENERAL */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFEAF5; 
+    border: 15px solid white;
+    border-radius: 10px;
+    flex-wrap: wrap; /
+}
+
+/* LOGO */
+.logo img {
+    height: 120px;
+}
+.logo {
+    margin-right: 20px;
+}
+
+/* MENU CENTRADO */
+.nav {
+    display: flex;
+    align-items: right;
+    gap: 30px; /* separación entre links */
+}
+
+.nav a {
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* BOTÓN CONTACTO */
+.btn-contacto {
+    border: 2px solid black;
+    padding: 6px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+/* CONTENEDOR DERECHA */
+.acciones {
+    display: flex;
+    align-items: center;
+}
+
+/* CARRITO */
+.carrito {
+    font-size: 30px;
+    cursor: pointer;
+}
+/* RESPONSIVO CELULAR */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .acciones {
+        margin-top: 10px;
+        align-items: center;
+    }
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+.hero-text h2 {
+    font-family: serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Poppins",serif;
+}
+
+.hero-img img {
+    width: 450px;
+    border-radius: 15px;
+}
+/* RESPONSIVO EL HERO */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+    height: auto;
+        width: 80%;
+           max-width: 100%;
+    }
+}
+
+/* PRODUCTOS */
+.productos {
+    padding: 40px;
+}
+
+.productos h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* RESPONSIVO TABLET */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVO CELULAR */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: flex;
+    padding: 40px;
+}
+
+.filtros {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CONTACTO */
+.contacto {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* PERFIL */
+/* CONTENEDOR GENERAL */
+.perfil-container {
+    display: flex;
+    gap: 20px;
+    padding: 40px 80px;
+}
+
+/* MENÚ LATERAL */
+.menu-lateral {
+    background-color: #e6cdd3;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100px;
+    height: fit-content;
+}
+
+.menu-lateral p {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu-lateral .activo {
+    font-weight: bold;
+}
+
+/* CAJA PRINCIPAL */
+.perfil-box {
+    flex: 1;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* TITULO */
+.perfil-box h2 {
+    margin-bottom: 20px;
+}
+
+/* FILAS */
+.fila {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* CAMPOS */
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-family: "Poppins",serif;
+}
+
+/* INPUTS */
+.campo input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+/* GENERO */
+.genero {
+    margin-top: 15px;
+}
+
+.genero label {
+    font-family: "Poppins",serif;
+    margin-right: 15px;
+}
+
+/* BOTÓN */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    background-color: #333;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* RESPONSIVO CELULAR */
+@media (max-width: 768px) {
+
+    .perfil-container {
+        flex-direction: column;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+}
+
+/* CARRITO */
+.carrito {
+    padding: 40px;
+}
+
+.carrito table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carrito th, .carrito td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.total {
+    text-align: right;
+}
+
+.total button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* FOOTER GENERAL */
+.footer {
+    background-color: #ffe7ee; /* rosa suave */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr; /* 4 columnas */
+    gap: 40px;
+    padding: 40px 60px;
+    font-size: 14px;
+}
+
+/* COLUMNAS */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LOGO */
+.footer-logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* REDES */
+.redes img{
+    width: 25px;   /* tamaño pequeño */
+    height: auto;  /* mantiene proporción */
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* TITULOS */
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#p1 
+{
+    color: #333;
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+}
+
+/* TEXTO MARCA */
+.titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+/* DESCRIPCIÓN */
+.footer-col p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* COPYRIGHT */
+.copy {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* LINKS */
+.footer-col a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 6px;
+}
+
+/* HOVER */
+.footer-col a:hover {
+    text-decoration: underline;
+}
+/* RESPONSIVO TABLET */
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVO CELULAR */
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
