@@ -341,7 +341,6 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-
 }
 
 .campo label {
@@ -393,38 +392,76 @@ body {
     }
 }
 
-/* CARRITO */
-.carrito {
+/* CONTENEDOR */
+.carrito-container {
     padding: 40px;
 }
 
-.carrito table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+/* TABLA */
+.tabla {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-.carrito th, .carrito td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+.fila {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.total {
-    text-align: right;
+.encabezado {
+    font-weight: bold;
 }
 
-.total button {
-    background-color: black;
+.producto img {
+    width: 80px;
+}
+
+/* INFO Y RESUMEN */
+.info-resumen {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* INFO */
+.info {
+    width: 60%;
+}
+
+.info ul {
+    padding-left: 20px;
+}
+
+/* RESUMEN */
+.resumen {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.resumen h2 {
+    margin-top: 10px;
+}
+
+.resumen button {
+    margin-top: 10px;
+    background-color: #333;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
+
 
 /* FOOTER GENERAL */
 .footer {
-    background-color: #ffe7ee; /* rosa suave */
+    background-color: #FFEAF5; /* rosa principal */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr; /* 4 columnas */
     gap: 40px;
