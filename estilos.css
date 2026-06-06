@@ -1288,75 +1288,80 @@ body {
 @media (max-width: 600px) {
     .acerca-valores { grid-template-columns: 1fr; }
 }
-/* =============================================
-   CARRITO RESPONSIVO
-   ============================================= */
 @media (max-width: 768px) {
 
-    /* TABLA — apilar en columna */
-    .tabla {
-        padding: 10px;
-    }
-
-    /* OCULTAR ENCABEZADOS */
+    /* OCULTAR ENCABEZADOS EN MÓVIL */
     .fila.encabezado {
         display: none;
     }
 
-    /* CADA PRODUCTO OCUPA TODA LA FILA */
+    /* CADA PRODUCTO COMO TARJETA */
     .fila-carrito {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 16px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 14px;
         border: 1px solid #eee;
         border-radius: 12px;
         margin-bottom: 12px;
     }
 
-    /* IMAGEN MÁS GRANDE EN MÓVIL */
-    .fila-carrito .producto-carrito img {
-        width: 90px;
-        height: 90px;
+    .fila-carrito .producto-carrito {
+        grid-column: 1 / -1;
     }
-
-    /* CELDAS ALINEADAS A LA IZQUIERDA CON ETIQUETA */
-    .fila-carrito .celda::before,
-    .fila-carrito .celda-total::before {
-        font-weight: 600;
-        font-size: 12px;
-        color: #999;
-        display: block;
-        margin-bottom: 2px;
-    }
-
-    .fila-carrito .celda:nth-child(2)::before { content: "Envío"; }
-    .fila-carrito .celda:nth-child(3)::before { content: "Precio"; }
-    .fila-carrito .celda-total::before        { content: "Total"; }
 
     .fila-carrito .celda,
     .fila-carrito .celda-total {
         text-align: left;
+        font-size: 13px;
     }
 
     .fila-carrito .cantidad-controles {
         justify-content: flex-start;
     }
 
-    /* BOTÓN ELIMINAR A LA DERECHA */
     .fila-carrito .btn-eliminar-producto {
+        grid-column: 1 / -1;
         text-align: right;
     }
 
     /* INFO + RESUMEN EN COLUMNA */
     .info-resumen {
         flex-direction: column;
+        gap: 20px;
     }
 
     .info {
         width: 100%;
     }
 
+    /* RESUMEN SIN DESBORDAMIENTO */
     .resumen {
         width: 100%;
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+
+    .resumen p,
+    .resumen h2 {
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .resumen h2 {
+        font-size: 22px;
+    }
+
+    #btnFinalizar {
+        width: 100%;
+    }
+
+    /* TABLA SIN DESBORDAMIENTO */
+    .tabla {
+        overflow-x: hidden;
+        padding: 12px;
+    }
+
+    .carrito-container {
+        padding: 20px 16px;
     }
 }
