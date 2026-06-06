@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bags Alondra</title>
-        <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="estilos.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <header class="header">
     
     <!-- Para que el logo se valla a la izquierda -->
     <div class="logo">
         <img src="assets/Logo Cerca.png" alt="Bags">
     </div>
-
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
     <!--  Para que el menu este en el centro -->
     <nav class="nav">
         <a href="perfil.html">Mi cuenta</a>
@@ -28,22 +37,70 @@
         <a href="catalogo.html">Catalogo</a>
         <a href="carrito.html">Carrito</a>
         <a href="Acercade.html">Acerca De</a>
-    </nav>
-
-    <!--    A la derecha este el boton y el carrito  -->
-    <div class="acciones">
-        <a href="contacto.html" class="btn-contacto">Contacto</a>
+        <a href="contacto.html" class="btn btn-outline-dark me-3">Contacto</a>
             <a href="carrito.html" class="carrito">
                  <img src="assets/carrito.png" alt="Carrito" class="carrito">
             </a>
-    </div>
+    </nav>
 </header>
+<!-- HOT SALE -->
+<section class="hotsale-section">
 
+  <!-- ENCABEZADO -->
+  <div class="hotsale-header">
+    <div class="hotsale-badge">🔥 HOT SALE</div>
+    <h2>Ofertas imperdibles</h2>
+    <p>Por tiempo limitado — descuentos exclusivos en piezas seleccionadas</p>
+  </div>
+
+  <!-- GRID DE IMÁGENES -->
+  <div class="hotsale-grid">
+
+    <!-- IMAGEN GRANDE IZQUIERDA -->
+    <div class="hotsale-item hotsale-grande">
+      <img src="assets/Teri Negra.jpg" alt="Hot Sale 1">
+      <div class="hotsale-overlay">
+        <span class="hotsale-descuento">-30%</span>
+        <span class="hotsale-nombre">Coach Teri Shoulder</span>
+        <a href="catalogo.html" class="hotsale-btn">Ver oferta</a>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: 2 imágenes -->
+    <div class="hotsale-columna">
+
+      <div class="hotsale-item">
+        <img src="assets/Hot Sale-1.jpg" alt="Hot Sale 2">
+        <div class="hotsale-overlay">
+          <span class="hotsale-descuento">-20%</span>
+          <span class="hotsale-nombre">Coach Klare</span>
+          <a href="catalogo.html" class="hotsale-btn">Ver oferta</a>
+        </div>
+      </div>
+
+      <div class="hotsale-item">
+        <img src="assets/Hot Sale-2.jpg" alt="Hot Sale 3">
+        <div class="hotsale-overlay">
+          <span class="hotsale-descuento">-15%</span>
+          <span class="hotsale-nombre">Coach</span>
+          <a href="catalogo.html" class="hotsale-btn">Ver oferta</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <section class="hero">
     <div class="hero-text">
         <h2>Colores de primavera</h2>
         <p>Descubre nuestra colección de bolsas diseñadas para mujeres modernas</p>
-        <button>Ir al catálogo</button>
+        <button>
+            <a href="catalogo.html" class="btn-outline-dark">
+            Ir al Catálogo
+            </a>
+        </button>
     </div>
 
     <div class="hero-img">
@@ -52,38 +109,88 @@
 </section>
 
 <!-- PRODUCTOS -->
-<section class="productos">
-    <h2 align = "center">Modelos de temporada</h2>
+<section class="container py-5">
+    <h2 class="mb-4">Modelos de temporada</h2>
+    <div class="row">
 
-    <div class="grid">
-
-        <div class="card">
-            <img src="assets/Klare Diversos 1.jpg">
-            <p>Coach Klare</p>
-            <span>$1,090</span>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <div class="card">
-            <img src="assets/Klare Negra.jpg">
-            <p>Coach Klare</p>
-            <span>$1,090</span>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <div class="card">
-            <img src="assets/Klare Diversos 1.jpg">
-            <p>Coach Klare</p>
-            <span>$1,090</span>
-            <button>Agregar al carrito</button>
-        </div>
-                <div class="card">
-            <img src="assets/Klare Diversos 1.jpg">
-            <p>Coach Klare</p>
-            <span>$1,090</span>
-            <button>Agregar al carrito</button>
-        </div>
+        <!-- CARD -->
+<div class="col-md-4">
+    <div class="card p-3 text-center">
+        <img src="assets/Klare Negra.jpg" class="img-fluid mb-3">
+        <h5>Coach Klare</h5>
+        <p>$1,090</p>
+<button 
+  class="btn btn-dark btn-agregar-carrito"
+  data-nombre="Coach Klare Negra"
+  data-precio="1090"
+  data-imagen="assets/Klare Negra.jpg">
+  Agregar al carrito
+</button>
     </div>
+</div>
+<div class="col-md-4">
+    <div class="card p-3 text-center">
+        <img src="assets/Klare Diversos 1.jpg" class="img-fluid mb-3">
+        <h5>Coach Klare</h5>
+        <p>$1,090</p>
+<button 
+  class="btn btn-dark btn-agregar-carrito"
+  data-nombre="Coach Klare Diversos"
+  data-precio="1090"
+  data-imagen="assets/Klare Diversos 1.jpg">
+  Agregar al carrito
+</button>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card p-3 text-center">
+        <img src="assets/Tabby Beige 1.jpg" class="img-fluid mb-3">
+        <h5>Coach Klare</h5>
+        <p>$1,000</p>
+<button 
+  class="btn btn-dark btn-agregar-carrito"
+  data-nombre="Tabby Beige"
+  data-precio="1000"
+  data-imagen="assets/Tabby Beige 1.jpg">
+  Agregar al carrito
+</button>
+    </div>
+</div>
+</section>
+<!-- CATEGORÍAS -->
+<section class="container py-5">
+  <h2 class="mb-4">Categorías</h2>
+  <div class="row g-3">
+
+    <div class="col-6 col-md-3">
+      <a href="catalogo.html" class="categoria-card">
+        <img src="assets/Coach Savannah Beige.jpg" alt="Bolsos">
+        <span>Bolsos</span>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <a href="catalogo.html" class="categoria-card">
+        <img src="assets/Klare Beige.jpg" alt="Crossbody">
+        <span>Crossbody</span>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <a href="catalogo.html" class="categoria-card">
+        <img src="assets/Zip Card Beige.jpg" alt="Carteras">
+        <span>Carteras</span>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <a href="catalogo.html" class="categoria-card">
+        <img src="assets/Lentes.jpeg" alt="Lentes">
+        <span>Lentes</span>
+      </a>
+    </div>
+
+  </div>
 </section>
 <footer class="footer">
 
@@ -113,12 +220,11 @@
     <!-- COLUMNA 3 -->
     <div class="footer-col">
         <h4>Enlaces del sitio</h4>
-        <a href="#">Inicio</a>
-        <a href="#">Catalogo</a>
-        <a href="#">Categorias</a>
-        <a href="#">Acerca de nosotros</a>
-        <a href="#">Contacto</a>
-        <a href="#">Mi cuenta</a>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="Acercade.html">Acerca de nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="perfil.html">Mi cuenta</a>
     </div>
 
     <!-- COLUMNA 4 -->
@@ -131,5 +237,6 @@
         <a href="#">Politicas de privacidad</a>
     </div>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>

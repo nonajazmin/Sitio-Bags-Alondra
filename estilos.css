@@ -1,5 +1,6 @@
 body{
-    background-color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
 }
 .dm-serif-display-regular {
   font-family: "DM Serif Display", serif;
@@ -24,22 +25,27 @@ body{
 }
 
 h1{
-    display: flex;
-    margin: 8px 10px 8px;
-    font-family: serif;
-    font-size: 44px;
+    font-family: sans-serif;
+    font-size: 40px;
 }
 h2{
     display: flex;
-    font-family: serif;
+    text-align: center;
+  font-family: "DM Serif Display", serif;
     font-size: 36px;
+}
+h5{
+    font-family: "Poppins",sans-serif;
+
 }
 p{
     display: flex;
     font-family: "Poppins",sans-serif;
     font-size: 22px;
 }
-
+.card {
+ border-radius: 12px;
+}
 
 /* RESET */
 * {
@@ -60,7 +66,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #FFEAF5; 
-    border: 15px solid white;
     border-radius: 10px;
     flex-wrap: wrap; /
 }
@@ -69,14 +74,11 @@ body {
 .logo img {
     height: 120px;
 }
-.logo {
-    margin-right: 20px;
-}
 
 /* MENU CENTRADO */
 .nav {
     display: flex;
-    align-items: right;
+    align-items: center;
     gap: 30px; /* separación entre links */
 }
 
@@ -87,45 +89,30 @@ body {
     font-size: 16px;
 }
 
-/* BOTÓN CONTACTO */
-.btn-contacto {
-    border: 2px solid black;
-    padding: 6px 14px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: black;
-    margin-right: 15px;
-}
-
-/* CONTENEDOR DERECHA */
-.acciones {
-    display: flex;
-    align-items: center;
-}
-
 /* CARRITO */
 .carrito {
     font-size: 30px;
-    cursor: pointer;
+    cursor: center;
+    margin-right: 15px;
 }
 /* RESPONSIVO CELULAR */
 @media (max-width: 768px) {
 
     .header {
         flex-direction: column;
-        align-items: center;
+        align-items: right;
     }
 
     .nav {
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
-        align-items: center;
+        align-items: right;
     }
 
     .acciones {
         margin-top: 10px;
-        align-items: center;
+        align-items: right;
     }
 }
 
@@ -140,10 +127,11 @@ body {
 
 .hero-text {
     max-width: 400px;
+    font-family: sans-serif;
 }
 
 .hero-text h2 {
-    font-family: serif;
+      font-family: "DM Serif Display", serif;
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -197,35 +185,6 @@ body {
     gap: 20px;
 }
 
-/* CARD */
-.card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.card img {
-    width: 80%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.card span {
-    display: block;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.card button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 6px;
-    cursor: pointer;
-}
 /* RESPONSIVO TABLET */
 @media (max-width: 1024px) {
     .grid {
@@ -288,31 +247,17 @@ body {
     border: none;
     border-radius: 6px;
 }
-
+/*ACERCA DE*/
+.aser-text {
+    max-width: 400px;
+    font-family: sans-serif;
+}
 /* PERFIL */
 /* CONTENEDOR GENERAL */
 .perfil-container {
     display: flex;
     gap: 20px;
-    padding: 40px 80px;
-}
-
-/* MENÚ LATERAL */
-.menu-lateral {
-    background-color: #e6cdd3;
-    padding: 15px;
-    border-radius: 10px;
-    width: 100px;
-    height: fit-content;
-}
-
-.menu-lateral p {
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.menu-lateral .activo {
-    font-weight: bold;
+    padding: 40px;
 }
 
 /* CAJA PRINCIPAL */
@@ -321,19 +266,12 @@ body {
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
 }
 
 /* TITULO */
 .perfil-box h2 {
     margin-bottom: 20px;
-}
-
-/* FILAS */
-.fila {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 15px;
 }
 
 /* CAMPOS */
@@ -352,7 +290,7 @@ body {
 .campo input {
     padding: 10px;
     border-radius: 8px;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 /* GENERO */
@@ -380,6 +318,10 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
+.btn-outline-dark:hover{
+    background-color: black;
+    color: white;
+}
 /* RESPONSIVO CELULAR */
 @media (max-width: 768px) {
 
@@ -405,19 +347,19 @@ body {
     margin-bottom: 30px;
 }
 
-.fila {
-    display: grid;
+.fila{
+    display:grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    margin-bottom: 15px;
+    align-items:center;
+    padding:20px;
 }
 
-.encabezado {
-    font-weight: bold;
+.producto img{
+    width:80px;
 }
 
-.producto img {
-    width: 80px;
+.filaencabezado {
+    font-family: "Poppins",serif;
 }
 
 /* INFO Y RESUMEN */
@@ -425,6 +367,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    font-family: "Poppins",sans-serif;
 }
 
 /* INFO */
@@ -442,10 +385,12 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
+    font-family: "Poppins",serif;
 }
 
 .resumen h2 {
     margin-top: 10px;
+    font-family: "Poppins",serif;
 }
 
 .resumen button {
@@ -532,6 +477,111 @@ body {
 .footer-col a:hover {
     text-decoration: underline;
 }
+/* FILAS DE PRODUCTOS EN EL CARRITO */
+.fila-carrito {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/* IMAGEN Y NOMBRE DEL PRODUCTO */
+.fila-carrito .producto-carrito {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fila-carrito .producto-carrito img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* CELDAS CENTRADAS */
+.fila-carrito .celda {
+    text-align: center;
+}
+
+/* CELDA TOTAL */
+.fila-carrito .celda-total {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* CONTROLES DE CANTIDAD */
+.cantidad-controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cantidad-controles button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.cantidad-controles button:hover {
+    background: #f0f0f0;
+}
+
+/* BOTÓN ELIMINAR */
+.btn-eliminar-producto {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+}
+
+.btn-eliminar-producto:hover {
+    color: #e00;
+}
+
+/* CARRITO VACÍO */
+.carrito-vacio {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carrito-vacio p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/* TOAST NOTIFICACIÓN */
+.toast-carrito {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #111;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    animation: fadeInUp .3s ease;
+    max-width: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+/*este es para que haga la animacion de que se agrego al carrito*/ 
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
 /* RESPONSIVO TABLET */
 @media (max-width: 900px) {
     .footer {
@@ -545,4 +595,696 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
     }
+}
+/* =============================================
+   ANIMACIONES AL SCROLL
+   ============================================= */
+
+/* Estado inicial — invisible y desplazado */
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estado final — visible */
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero text entra desde la izquierda */
+.hero-text.animar {
+    transform: translateX(-40px);
+}
+.hero-text.animar.visible {
+    transform: translateX(0);
+}
+
+/* Hero imagen entra desde la derecha */
+.hero-img.animar {
+    transform: translateX(40px);
+}
+.hero-img.animar.visible {
+    transform: translateX(0);
+}
+/* =============================================
+   CATEGORÍAS
+   ============================================= */
+.categoria-card {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    aspect-ratio: 1 / 1;
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.categoria-card:hover img {
+    transform: scale(1.06);
+}
+
+.categoria-card span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.error-msg {
+    color: #c0392b;
+    font-size: 0.78rem;
+    display: none;
+    margin-bottom: 6px;
+}
+.campo-error { border: 1.5px solid #c0392b !important; }
+.campo-ok    { border: 1.5px solid #27ae60 !important; }
+
+/* =============================================
+   SECCIÓN VISUAL CONTACTO
+   ============================================= */
+.contacto-visual {
+    background-color: #FFF5FA;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contacto-visual-header {
+    margin-bottom: 40px;
+}
+
+.contacto-logo {
+    width: 70px;
+    margin-bottom: 16px;
+}
+
+.contacto-visual-header h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.contacto-visual-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #888;
+    justify-content: center;
+}
+
+/* GRID DE TARJETAS */
+.contacto-qr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* TARJETA BASE */
+.qr-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ENCABEZADO DE TARJETA */
+.qr-card-top {
+    width: 100%;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+
+.qr-card-top.instagram { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
+.qr-card-top.whatsapp  { background: #25D366; }
+
+.qr-red-icon {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+/* IMAGEN QR */
+.qr-card-body {
+    padding: 20px;
+}
+
+.qr-img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* FOOTER DE TARJETA */
+.qr-card-footer {
+    padding: 10px 16px 16px;
+}
+
+.qr-card-footer p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #555;
+    justify-content: center;
+    margin: 0;
+}
+
+/* TARJETA CENTRAL — MARCA */
+.qr-card-marca {
+    background: linear-gradient(160deg, #FFEAF5, #fff0f8);
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 12px;
+}
+
+.qr-logo-marca {
+    width: 100px;
+}
+
+.qr-marca-nombre {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    justify-content: center;
+}
+
+.qr-marca-slogan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+    justify-content: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .contacto-qr-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+}
+/* =============================================
+   TARJETA DE PERFIL
+   ============================================= */
+.perfil-container {
+    display: flex;
+    gap: 24px;
+    padding: 40px 80px;
+    align-items: flex-start;
+}
+
+.perfil-box {
+    flex: 1.4;
+}
+
+/* TARJETA DERECHA */
+.perfil-tarjeta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* AVATAR */
+.perfil-avatar-section {
+    background: linear-gradient(135deg, #FFEAF5, #fff0f8);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #f0c0d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 36px;
+    font-weight: 700;
+    color: #a0507a;
+    font-family: 'DM Serif Display', serif;
+}
+
+.perfil-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-cambiar-foto {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-cambiar-foto:hover {
+    background: #111;
+    color: white;
+    border-color: #111;
+}
+
+.perfil-tarjeta h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.tarjeta-email {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #999;
+    margin: 0;
+    justify-content: center;
+}
+
+/* DESCUENTOS */
+.perfil-descuentos {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.perfil-descuentos h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.descuento-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #FFF5FA;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.descuento-inactivo {
+    opacity: 0.45;
+    filter: grayscale(1);
+}
+
+.descuento-icono {
+    font-size: 22px;
+}
+
+.descuento-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.descuento-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+}
+
+.descuento-valor {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: #888;
+}
+
+.descuento-badge {
+    background: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .perfil-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+}
+/* =============================================
+   HOT SALE
+   ============================================= */
+.hotsale-section {
+    padding: 60px 40px;
+    background-color: #fff8fb;
+}
+
+.hotsale-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.hotsale-badge {
+    display: inline-block;
+    background: #ff3366;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.hotsale-header h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.hotsale-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #888;
+    justify-content: center;
+}
+
+/* GRID */
+.hotsale-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hotsale-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ITEM BASE */
+.hotsale-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hotsale-grande {
+    aspect-ratio: 3 / 4;
+}
+
+.hotsale-columna .hotsale-item {
+    aspect-ratio: 4 / 3;
+    flex: 1;
+}
+
+.hotsale-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hotsale-item:hover img {
+    transform: scale(1.05);
+}
+
+/* OVERLAY */
+.hotsale-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 55%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hotsale-item:hover .hotsale-overlay {
+    opacity: 1;
+}
+
+.hotsale-descuento {
+    background: #ff3366;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.hotsale-nombre {
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+}
+
+.hotsale-btn {
+    background: white;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.hotsale-btn:hover {
+    background: #f0f0f0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hotsale-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =============================================
+   ACERCA DE
+   ============================================= */
+
+/* HERO */
+.acerca-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #FFF5FA;
+}
+
+.acerca-hero-text {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.acerca-badge {
+    display: inline-block;
+    background: #FFEAF5;
+    color: #a0507a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.acerca-hero-text h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.acerca-hero-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.acerca-btn {
+    display: inline-block;
+    background: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.acerca-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.acerca-hero-img {
+    flex-shrink: 0;
+}
+
+.acerca-hero-img img {
+    width: 280px;
+    border-radius: 20px;
+}
+
+/* VALORES */
+.acerca-valores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 60px 80px;
+    background: white;
+}
+
+.valor-card {
+    background: #FFF5FA;
+    border-radius: 16px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.valor-icono {
+    font-size: 28px;
+    color: #c06090;
+}
+
+.valor-card h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.valor-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* BANNER */
+.acerca-banner {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+.acerca-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.acerca-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.acerca-banner-overlay h2 {
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    font-size: 38px;
+    justify-content: center;
+    margin: 0;
+}
+
+.acerca-banner-overlay p {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255,255,255,0.85);
+    font-size: 15px;
+    justify-content: center;
+    margin: 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .acerca-hero {
+        flex-direction: column;
+        padding: 40px 24px;
+        text-align: center;
+    }
+    .acerca-hero-text { align-items: center; }
+    .acerca-hero-img img { width: 200px; }
+    .acerca-valores {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .acerca-valores { grid-template-columns: 1fr; }
 }
